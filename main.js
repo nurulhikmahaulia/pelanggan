@@ -1,3 +1,14 @@
-import { log } from './logger'
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js'
 
-log('Import works!')
+import { 
+  getFirestore,
+  collection,
+  doc,
+  getDocs,
+  getDoc,
+  addDoc,
+  deleteDoc,
+  updateDoc,
+  query,
+  orderBy
+} from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js';
