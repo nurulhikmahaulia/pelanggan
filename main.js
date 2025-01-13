@@ -22,6 +22,10 @@ const firebaseConfig = {
   measurementId: "G-E7G0K9XTCD"
 };
 
+//inisialisasi firebase
+const aplikasi = initializeApp(firebaseConfig)
+const basisdata = getFirestore(aplikasi)
+
 // fungsi ambil daftar pelanggan
 export async function ambilDaftarPelanggan() {
   const refDokumen = collection(basisdata, "pelanggan");
